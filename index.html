@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gues Game</title>
+</head>
+
+<style>
+    body {
+        background-color: rgb(231, 231, 231);
+    }
+
+    .guesgamecontainer {
+        width: 100%;
+        height: 490px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background-color: rgb(248, 248, 248);
+        width: 30%;
+        padding: 20px;
+        height: 50%;
+        border-radius: 10px;
+       
+        text-align: center;
+    }
+
+    .guessInput {
+        width: 70%;
+        padding: 5px;
+
+    }
+
+    .submitbtn {
+        padding: 8px;
+        background-color: rgb(57, 174, 212);
+        border: none;
+        color: white;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .guessInput {
+        outline: none;
+    }
+
+    .newgamebtn {
+        padding: 10px;
+        background-color: rgb(57, 174, 212);
+        color: white;
+        border-radius: 4px;
+        font-size: 14px;
+        cursor: pointer;
+        border: none;
+        margin: 10px;
+    }
+    .feedback{
+        margin: 3px;
+    }
+</style>
+
+<body>
+
+    <div class="guesgamecontainer">
+        <div class="container">
+            <h1>Guess the number</h1>
+            <p>I'm thiking of a number between 1 and 100 </p>
+
+            <div class="gameErea">
+                <input type="number" placeholder="Enter the guess" class="guessInput">
+                <button class="submitbtn">Submit</button>
+                <button class="newgamebtn">New game</button>
+            </div>
+            <div class="feedback"></div>
+            <div class="attemtsDisplay"></div>
+        </div>
+    </div>
+
+    <script src="./guess.js"></script>
+</body>
+
+</html>
